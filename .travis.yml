@@ -31,7 +31,7 @@ deploy:
     skip-cleanup: true
     local_dir: dist
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: $USER_NAME/$GH_REF
+    repo: $GH_REF
     keep-history: true
     target-branch: master
     on:
