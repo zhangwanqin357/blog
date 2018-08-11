@@ -2,7 +2,7 @@ module.exports = {
   base: '/blog/', //设置站点根路径
   title: 'Zhang Wanqin\'s Blog', // 站点标题
   description: '本博客记录前端工作学习中的点点滴滴', // 站点描述，以<meta>标签渲染到html中
-  dest: 'dist', // 设置输出目录
+  dest: 'docs/.vuepress/dist', // 设置输出目录
   head: [ // 额外需要注入到当前页面<head>标签中的标签
     ['link', {rel: 'icon', href: '/header.png'}]
   ],
