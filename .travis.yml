@@ -24,14 +24,12 @@ cache:
 # 不在每次build之后都接收邮箱提醒
 notifications:
     email: false
-# local_dir：需要depoly的文件夹
-# keep-history：非常重要，没有的话，Travis会删除这些文件，导致没有什么可以发布
 deploy:
     provider: pages
     skip-cleanup: true
-    local_dir: docs/.vuepress/dist
+    local_dir: docs/.vuepress/dist # local_dir：需要depoly的文件夹
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    keep-history: true
-#    target-branch: master # 默认gh-pages,需要将local-dir push到哪里
+    keep-history: true # keep-history：非常重要，没有的话，Travis会删除这些文件，导致没有什么可以发布
+#    target-branch: gh-pages # 默认gh-pages,目标分支，及展示网站的分支
     on:
         branch: master # 源文件分支

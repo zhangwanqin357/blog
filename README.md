@@ -1,7 +1,5 @@
 
-
 #### 结构
-
 - CSS
 - JS
 - Tips
@@ -9,11 +7,8 @@
 - News
 
 #### 项目集成工具
-
 - Travis-CI
 
 #### 仓库更新方式
-
-1. blog-resource项目下编辑，push到blog-resource仓库
-
-2. 将代码拷贝到blog项目下，push到blog仓库master，等待Travic-CI自动集成
+1. master分支下修改文件，push
+2. push之后等待月5min,Travis-CI会自动集成到gh-pages分支
