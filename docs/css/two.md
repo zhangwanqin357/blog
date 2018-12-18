@@ -1,4 +1,1 @@
----
-layout: DemoOne
----
 #### Page two

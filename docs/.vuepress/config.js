@@ -153,9 +153,10 @@ module.exports = {
       // ],
     },
     lastUpdated: '上次更新',
-    repo: 'https://github.com/zhangwanqin357/blog', // 会自动在页面的导航栏生成一个Github的导航链接，
-    repoLabel: '查看源码',
-    editLinks: true,
+    repo: 'https://github.com/zhangwanqin357/blog', // 会自动在页面的导航栏生成一个Github的导航链接
+    repoLabel: 'Github',
+    // editLinks: true,
+    // editLinkText: '在Github上编辑此页',
     configureWebpack: {
       resolve: {
         alias: {
