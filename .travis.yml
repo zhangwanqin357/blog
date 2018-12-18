@@ -34,4 +34,4 @@ deploy:
     keep-history: true
 #    target-branch: master # 默认gh-pages,需要将local-dir push到哪里
     on:
-        branch: resource
+        branch: master # 源文件分支
