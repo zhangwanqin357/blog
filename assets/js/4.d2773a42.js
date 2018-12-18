@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{195:function(e,n,t){"use strict";t.r(n);var i=t(0),o=Object(i.a)({},function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("这是一个组件的demo")])},[],!1,null,null,null);o.options.__file="DemoOne.vue";n.default=o.exports}}]);
