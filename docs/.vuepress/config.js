@@ -6,14 +6,25 @@ module.exports = {
   head: [ // 额外需要注入到当前页面<head>标签中的标签
     ['link', {rel: 'icon', href: '/header.png'}]
   ],
+  markdown: {
+    toc: {
+      includeLevel: [4, 5]
+    },
+    // config: md => {
+    //   // 使用更多的 markdown-it 插件!
+    //   md.use(require('markdown-it-table-of-contents'))
+    // }
+  },
   themeConfig: {
+    displayAllHeaders: true, // 默认值：false
     nav: [ // 导航栏链接
       { text: '首页', link: '/' },
       { text: 'CSS', link: '/css/' },
       { text: 'JS', link: '/js/' },
       { text: 'Tips', link: '/tips/'},
       { text: 'Deploy', link: '/deploy/'},
-      { text: 'News', link: '/news/'}
+      { text: 'News', link: '/news/'},
+      { text: 'Snippets', link: '/snippets/'}
     ],
     sidebar: {
       // sidebar: auto,
@@ -48,7 +59,7 @@ module.exports = {
           title: 'JavaScript',
           collapsable: false,
           children: [
-            '/'
+            'array-sort'
           ]
         },
         {
@@ -143,6 +154,15 @@ module.exports = {
           collapsable: false,
           children: [
             'HTML5.2'
+          ]
+        }
+      ],
+      '/snippets/': [
+        {
+          title: 'JavaScript',
+          collapsable: false,
+          children: [
+            'js-snippet'
           ]
         }
       ]
