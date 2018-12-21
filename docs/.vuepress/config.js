@@ -73,6 +73,7 @@ module.exports = {
           title: 'Vue.js',
           collapsable: false,
           children: [
+            'vuejs-slot-scope',
             'create-keyframe-animation'
           ]
         },
