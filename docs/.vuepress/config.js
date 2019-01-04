@@ -84,6 +84,13 @@ module.exports = {
             'cross-origin'
           ]
         },
+        {
+          title: 'JS devtips',
+          collapsable: false,
+          children: [
+            'js-devtips'
+          ]
+        }
       ],
       '/tips/': [
         {
@@ -137,6 +144,13 @@ module.exports = {
           collapsable: false,
           children: [
             'api'
+          ]
+        },
+        {
+          title: 'Markdown',
+          collapsable: false,
+          children: [
+            'markdown'
           ]
         }
       ],
