@@ -1,4 +1,4 @@
-### JavaScript Snippet
+### JavaScript Snippets
 [[toc]]
 
 #### 打乱数组

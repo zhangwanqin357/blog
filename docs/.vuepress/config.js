@@ -177,8 +177,7 @@ module.exports = {
           title: 'JavaScript',
           collapsable: false,
           children: [
-            'js-snippet',
-            'aaa'
+            'js-snippet'
           ]
         }
       ]
