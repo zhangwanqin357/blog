@@ -74,7 +74,8 @@ module.exports = {
           collapsable: false,
           children: [
             'vuejs-slot-scope',
-            'create-keyframe-animation'
+            'create-keyframe-animation',
+            'vuejs-develop-tip'
           ]
         },
         {
