@@ -33,17 +33,17 @@ module.exports = {
           title: 'CSS属性',
           collapsable: false, //设置false让一个组永远都是展开状态
           children: [
-            'shape-outside', //与文件名对应，页面里显示的标题是md文档里的标题
-            'filter',
-            'vertical-align'
+            'cssProps/shape-outside', //与文件名对应，页面里显示的标题是md文档里的标题
+            'cssProps/filter',
+            'cssProps/vertical-align'
           ]
         },
         {
           title: 'CSS动画',
           collapsable: false,
           children: [
-            'one',
-            'two'
+            'cssAnimate/one',
+            'cssAnimate/two'
           ]
         },
         {
@@ -59,30 +59,30 @@ module.exports = {
           title: 'JavaScript',
           collapsable: false,
           children: [
-            'array-sort'
+            'javaScript/array-sort'
           ]
         },
         {
           title: 'ES6',
           collapsable: false,
           children: [
-            'ES6-source'
+            'es6/ES6-source'
           ]
         },
         {
           title: 'Vue.js',
           collapsable: false,
           children: [
-            'vuejs-slot-scope',
-            'create-keyframe-animation',
-            'vuejs-develop-tip'
+            'vueJS/vuejs-slot-scope',
+            'vueJS/create-keyframe-animation',
+            'vueJS/vuejs-develop-tip'
           ]
         },
         {
           title: '跨域技术',
           collapsable: false,
           children: [
-            'cross-origin'
+            'crossDomain/cross-origin'
           ]
         },
         {
