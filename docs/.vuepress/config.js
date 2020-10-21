@@ -27,15 +27,14 @@ module.exports = {
       { text: 'Snippets', link: '/snippets/'}
     ],
     sidebar: {
-      // sidebar: auto,
       '/css/': [ // 将侧边栏划分成多个组
         {
           title: 'CSS属性',
           collapsable: false, //设置false让一个组永远都是展开状态
-          children: [
-            'cssProps/shape-outside', //与文件名对应，页面里显示的标题是md文档里的标题
+          children: [ //与文件名对应，页面里显示的标题是md文档里的标题
+            'cssProps/shape-outside/',  // 以/结尾会自动匹配*/README.md
             'cssProps/filter',
-            'cssProps/vertical-align'
+            'cssProps/vertical-align/'
           ]
         },
         {
@@ -59,37 +58,37 @@ module.exports = {
           title: 'JavaScript',
           collapsable: false,
           children: [
-            'javaScript/array-sort'
+            '1-JavaScript/array-sort'
           ]
         },
         {
           title: 'ES6',
           collapsable: false,
           children: [
-            'es6/ES6-source'
+            '2-ES6/ES6-source'
           ]
         },
         {
-          title: 'Vue.js',
+          title: 'Vue',
           collapsable: false,
           children: [
-            'vueJS/vuejs-slot-scope',
-            'vueJS/create-keyframe-animation',
-            'vueJS/vuejs-develop-tip'
+            '3-Vue/slot-scope/',
+            '3-Vue/create-keyframe-animation',
+            '3-Vue/vuejs-develop-tip'
           ]
         },
         {
           title: '跨域技术',
           collapsable: false,
           children: [
-            'crossDomain/cross-origin'
+            '4-CrossDomain/cross-origin'
           ]
         },
         {
-          title: 'JS devtips',
+          title: 'Dev Tips',
           collapsable: false,
           children: [
-            'js-devtips'
+            '5-DevTips/js-devtips'
           ]
         }
       ],
