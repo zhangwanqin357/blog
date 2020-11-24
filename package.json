@@ -15,7 +15,13 @@
     "moment": "^2.22.1"
   },
   "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.7.1",
+    "@vuepress/plugin-back-to-top": "^1.7.1",
+    "@vuepress/plugin-last-updated": "^1.7.1",
+    "@vuepress/plugin-register-components": "^1.7.1",
     "markdown-it-table-of-contents": "^0.4.3",
+    "vuepress": "^1.7.1",
+    "vuepress-plugin-container": "^2.1.5",
     "vuetify": "^1.1.8"
   }
 }

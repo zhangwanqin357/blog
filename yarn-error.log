@@ -1,0 +1,54 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\zwq\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\zwq\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\zwq\bin;C:\Gradle\gradle-5.6.2\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools;C:\Users\zwq\AppData\Roaming\npm\node_modules\cordova\bin;C:\Program Files\nodejs;C:\Users\zwq\AppData\Local\Android\Sdk\platform-tools;C:\Users\zwq\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\zwq\AppData\Roaming\npm;C:\Users\zwq\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Users\zwq\AppData\Local\Android\Sdk\tools;C:\Users\zwq\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  12.14.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (C:\Users\zwq\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:96722:59)
+      at Object.<anonymous> (C:\Users\zwq\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:89033:38)
+      at Generator.next (<anonymous>)
+      at step (C:\Users\zwq\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\zwq\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+      at processTicksAndRejections (internal/process/task_queues.js:94:5)
+
+npm manifest: 
+  {
+    "name": "vuepress",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "markdown-it-emoji": "^1.4.0",
+      "moment": "^2.22.1"
+    },
+    "devDependencies": {
+      "@vuepress/plugin-active-header-links": "^1.7.1",
+      "@vuepress/plugin-back-to-top": "^1.7.1",
+      "markdown-it-table-of-contents": "^0.4.3",
+      "vuetify": "^1.1.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
