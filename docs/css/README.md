@@ -8,22 +8,16 @@ markdown-it-emoji
 
 :kissing::grinning:
 
-http://getemoji.com/
+🔥 ✨ 🌟 💫 💥
 
 🌺 🌸 🌼 🌻 🌞
 
-old systems  http://classic.getemoji.com/
-
-🔥 ✨ 🌟 💫 💥
-
-搜索emoji    https://emojipedia.org/
-
 😀
 
+[emoji](http://getemoji.com/)
 
+[emoji [old systems]](http://classic.getemoji.com/)
+
+[这是一个emoji外部链接](https://emojipedia.org/)
 
 <DemoOne/>
-
-
-
-[sss <OutboundLink/>](https://emojipedia.org/)
