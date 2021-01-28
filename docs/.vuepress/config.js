@@ -16,6 +16,10 @@ module.exports = {
   themeConfig: {
     nav: toc.nav,
     sidebar: toc.sidebar,
+
+    displayAllHeaders: true, // 显示所有页面的标题链接
+    sidebarDepth: 2, // 标题深度，1 => h2; 2 => h2, h3;0 => 禁用标题链接
+    
     lastUpdated: '上次更新',
     repo: 'https://github.com/zhangwanqin357/blog', // 会自动在页面的导航栏生成一个Github的导航链接
     repoLabel: 'Github'

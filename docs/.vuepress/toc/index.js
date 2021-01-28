@@ -4,7 +4,7 @@ module.exports = {
     { text: 'CSS', link: '/css/' },
     { text: 'JS', link: '/js/' },
     { text: 'Tips', link: '/tips/'},
-    { text: 'Deploy', link: '/deploy/'},
+    { text: 'Tools', link: '/tools/'},
     { text: 'News', link: '/news/'},
     { text: 'Snippets', link: '/snippets/'}
   ],
@@ -128,14 +128,15 @@ module.exports = {
         ]
       }
     ],
-    '/deploy/': [
+    '/tools/': [
       {
         title: '持续集成',
         collapsable: false,
         children: [
-          'deploy-vue-with-travis'
+          'deploy/deploy-vue-with-travis'
         ]
-      }
+      },
+      ['git/', 'Git']
     ],
     '/news/': [
       {
