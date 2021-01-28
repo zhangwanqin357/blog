@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{381:function(t,e,n){"use strict";n.r(e);var s={data:function(){return{text:"text message"}}},i=n(25),u=Object(i.a)(s,(function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("这是一个公共组件的demo: "+this._s(this.text))])}),[],!1,null,null,null);e.default=u.exports}}]);
