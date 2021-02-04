@@ -119,13 +119,6 @@ module.exports = {
         children: [
           'api'
         ]
-      },
-      {
-        title: 'Markdown',
-        collapsable: false,
-        children: [
-          'markdown'
-        ]
       }
     ],
     '/tools/': [
@@ -136,7 +129,9 @@ module.exports = {
           'deploy/deploy-vue-with-travis'
         ]
       },
-      ['git/', 'Git']
+      ['git/', 'Git'],
+      ['linux/', 'Linux'],
+      ['markdown/', 'Markdown']
     ],
     '/news/': [
       {
