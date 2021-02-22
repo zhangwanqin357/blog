@@ -149,7 +149,8 @@ module.exports = {
         children: [
           'js-snippet'
         ]
-      }
+      },
+      ['mobile/', '移动端开发汇总']
     ]
   }
 }
