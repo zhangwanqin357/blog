@@ -27,7 +27,7 @@ notifications:
 deploy:
     provider: pages
     skip-cleanup: true
-    local_dir: docs/.vuepress/dist # local_dir：需要depoly的文件夹
+    local_dir: docs/.vuepress/dist # local_dir：需要deploy的文件夹
     github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
     keep-history: true # keep-history：非常重要，没有的话，Travis会删除这些文件，导致没有什么可以发布
 #    target-branch: gh-pages # 默认gh-pages,目标分支，及展示网站的分支

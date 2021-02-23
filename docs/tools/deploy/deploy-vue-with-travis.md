@@ -2,7 +2,7 @@
 
 > @2018-08-01 
 
-  1. 登录 https://travis-ci.org/ （使用github账户登录，可以同步所有仓库）
+  1. 登录 https://travis-ci.com/ （使用github账户登录，可以同步所有仓库）
 
   2. 选择需要同步的vue项目，勾上，点击settings
 
