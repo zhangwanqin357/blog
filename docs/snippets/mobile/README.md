@@ -14,7 +14,7 @@ if(/Android [4-7]/.test(navigator.appVersion)) {
 参考链接：[Android does not correctly scroll on input focus if not body element](https://stackoverflow.com/questions/23757345/android-does-not-correctly-scroll-on-input-focus-if-not-body-element)
 
 ## 项目启动报错：Application Error  net::ERR_CONNECTION_TIMED_OUT
-![shape-outside](./ERR_CONNECTION_TIMED_OUT.jpg)
+![ERR_CONNECTION_TIMED_OUT](./ERR_CONNECTION_TIMED_OUT.jpg)
 - 环境：Cordova+Vue开发安卓app, 电脑连接真机开发。
 - 错误出现时机：项目打包成功，并且launch success，app启动之后立即弹出。
 - 出现原因：公司断电之后，电脑IP重新分配，内网IP变化。
