@@ -39,7 +39,8 @@
 4. @dev ----`git stash pop stash@{0}`  将git栈中的代码合并到本地dev分支，就可以看到之前修改的部分
 
 ### 将分支(dev)的某次提交合并到另一个分支(master)
-1. 在master分支执行 `git cherry-pick 7fcb3defff` 7fcb3defff为dev分支的提交记录
+1. 在dev分支`git log`打印commit记录，copy需要合并的commitId
+1. 切换master，在master分支执行 `git cherry-pick commitId`
 2. `git push`
 
 ## 冲突解决
