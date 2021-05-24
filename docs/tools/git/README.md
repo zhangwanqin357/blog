@@ -3,8 +3,6 @@
 - `ll` 显示当前目录下的内容明细
 - `git status` 位于xx（master）分支，您的分支与上游分支‘origin/master'一致，并会显示出本地更改的部分
 - `git log` 查看历史git命令
-- `git rm` 删除某一文件
-- `git branch -v` 查看各个分支最后一次提交
 - `git checkout -b dev`  新建并切换到dev分支
 - **`git push --set-upstream origin dev` 将本地的dev分支push到远程git（远程没有dev分支时使用)**
 - `git diff web/src/components/userManage/layout4user.vue` 比较某单一文件的变化，**按q退出diff状态**
@@ -12,8 +10,12 @@
 - `git commit -m ""`
 - `git push`
 - `git checkout -- .` 切换分支时，将本分支所有修改缓存
-- `git branch -D dev` **删除本地**分支（需在非dev分支下运行）
-
+- `git rm` 删除某一文件
+- 分支
+  - `git branch -a` 查看所有分支
+  - `git branch -v` 查看各个分支最后一次提交
+  - `git branch -D dev` **删除本地分支**（需在非dev分支下运行）
+  - `git push origin --delete dev` **删除远程分支**（需在非dev分支下运行）
 
 ## 分支操作(新建，同步)
 
