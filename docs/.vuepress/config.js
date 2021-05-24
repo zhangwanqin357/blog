@@ -35,6 +35,7 @@ module.exports = {
   // @org/vuepress-plugin-xxx 缩写 @org/xxx
   // @vuepress/plugin-xxx 缩写 @vuepress/xxx（官方维护的插件）
   plugins: [
+    '@vuepress/plugin-last-updated',
     '@vuepress/plugin-register-components',
     '@vuepress/plugin-active-header-links',
     '@vuepress/plugin-search',
