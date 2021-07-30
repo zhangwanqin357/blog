@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue开发配置eslint自动格式化 | Zhang Wanqin&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/blog/header.png">
+    <meta name="description" content="本博客记录前端工作学习中的点点滴滴">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.2235c6e0.css" as="style"><link rel="preload" href="/blog/assets/js/app.355c7b23.js" as="script"><link rel="preload" href="/blog/assets/js/2.9ff58ea3.js" as="script"><link rel="preload" href="/blog/assets/js/47.1a957e56.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.be7f025a.js"><link rel="prefetch" href="/blog/assets/js/11.c7dd0c0d.js"><link rel="prefetch" href="/blog/assets/js/12.9a666b51.js"><link rel="prefetch" href="/blog/assets/js/13.88fa23b1.js"><link rel="prefetch" href="/blog/assets/js/14.ba05bfda.js"><link rel="prefetch" href="/blog/assets/js/15.f18789a3.js"><link rel="prefetch" href="/blog/assets/js/16.eaa5a9f4.js"><link rel="prefetch" href="/blog/assets/js/17.01c72640.js"><link rel="prefetch" href="/blog/assets/js/18.b2d7ab34.js"><link rel="prefetch" href="/blog/assets/js/19.c4763390.js"><link rel="prefetch" href="/blog/assets/js/20.bc551180.js"><link rel="prefetch" href="/blog/assets/js/21.76e67de8.js"><link rel="prefetch" href="/blog/assets/js/22.2109d02f.js"><link rel="prefetch" href="/blog/assets/js/23.b3e1c415.js"><link rel="prefetch" href="/blog/assets/js/24.59c53092.js"><link rel="prefetch" href="/blog/assets/js/25.a367bb68.js"><link rel="prefetch" href="/blog/assets/js/26.24a8073e.js"><link rel="prefetch" href="/blog/assets/js/27.f9ac8d70.js"><link rel="prefetch" href="/blog/assets/js/28.e4fb739e.js"><link rel="prefetch" href="/blog/assets/js/29.38d8bc5c.js"><link rel="prefetch" href="/blog/assets/js/3.fc8bdfdd.js"><link rel="prefetch" href="/blog/assets/js/30.5fd505ec.js"><link rel="prefetch" href="/blog/assets/js/31.3294ff09.js"><link rel="prefetch" href="/blog/assets/js/32.d55cf00e.js"><link rel="prefetch" href="/blog/assets/js/33.5c840556.js"><link rel="prefetch" href="/blog/assets/js/34.5dbf7c8d.js"><link rel="prefetch" href="/blog/assets/js/35.a445161a.js"><link rel="prefetch" href="/blog/assets/js/36.92fb070b.js"><link rel="prefetch" href="/blog/assets/js/37.e72cdede.js"><link rel="prefetch" href="/blog/assets/js/38.53f77c06.js"><link rel="prefetch" href="/blog/assets/js/39.2cfe416a.js"><link rel="prefetch" href="/blog/assets/js/4.0cac6b18.js"><link rel="prefetch" href="/blog/assets/js/40.37f3de7d.js"><link rel="prefetch" href="/blog/assets/js/41.cd905ab8.js"><link rel="prefetch" href="/blog/assets/js/42.85678bd7.js"><link rel="prefetch" href="/blog/assets/js/43.d49a8ceb.js"><link rel="prefetch" href="/blog/assets/js/44.d1de5d24.js"><link rel="prefetch" href="/blog/assets/js/45.bee3deb1.js"><link rel="prefetch" href="/blog/assets/js/46.5404a633.js"><link rel="prefetch" href="/blog/assets/js/5.77c0bc08.js"><link rel="prefetch" href="/blog/assets/js/6.8db0d727.js"><link rel="prefetch" href="/blog/assets/js/7.6f6054df.js"><link rel="prefetch" href="/blog/assets/js/8.2bf8f26c.js"><link rel="prefetch" href="/blog/assets/js/9.a45fa5eb.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.2235c6e0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Zhang Wanqin's Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/blog/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/blog/tips/" class="nav-link">
+  Tips
+</a></div><div class="nav-item"><a href="/blog/tools/" class="nav-link router-link-active">
+  Tools
+</a></div><div class="nav-item"><a href="/blog/news/" class="nav-link">
+  News
+</a></div><div class="nav-item"><a href="/blog/snippets/" class="nav-link">
+  Snippets
+</a></div> <a href="https://github.com/zhangwanqin357/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/css/" class="nav-link">
+  CSS
+</a></div><div class="nav-item"><a href="/blog/js/" class="nav-link">
+  JS
+</a></div><div class="nav-item"><a href="/blog/tips/" class="nav-link">
+  Tips
+</a></div><div class="nav-item"><a href="/blog/tools/" class="nav-link router-link-active">
+  Tools
+</a></div><div class="nav-item"><a href="/blog/news/" class="nav-link">
+  News
+</a></div><div class="nav-item"><a href="/blog/snippets/" class="nav-link">
+  Snippets
+</a></div> <a href="https://github.com/zhangwanqin357/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>持续集成</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/tools/deploy/deploy-vue-with-travis.html" class="sidebar-link">使用Travis CI持续集成Vue项目，在gh-pages上预览</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><a href="/blog/tools/git/" class="sidebar-link">Git</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/git/#git-常用操作" class="sidebar-link">Git 常用操作</a></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#分支操作-新建-同步" class="sidebar-link">分支操作(新建，同步)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/git/#基于master创建本地新分支-并同步到远程" class="sidebar-link">基于master创建本地新分支,并同步到远程</a></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#拉取git上已存在的指定分支" class="sidebar-link">拉取git上已存在的指定分支</a></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#合并分支" class="sidebar-link">合并分支</a></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#将分支-dev-的某次提交合并到另一个分支-master" class="sidebar-link">将分支(dev)的某次提交合并到另一个分支(master)</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#冲突解决" class="sidebar-link">冲突解决</a></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#操作撤回" class="sidebar-link">操作撤回</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/git/#撤销git-add" class="sidebar-link">撤销git add</a></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#取消上一次commit" class="sidebar-link">取消上一次commit</a></li><li class="sidebar-sub-header"><a href="/blog/tools/git/#回滚上一次push" class="sidebar-link">回滚上一次push</a></li></ul></li></ul></li><li><a href="/blog/tools/linux/" class="sidebar-link">Linux</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/linux/#linux-下-tar-gz-文件解压缩命令" class="sidebar-link">Linux 下 *.tar.gz 文件解压缩命令</a></li></ul></li><li><a href="/blog/tools/markdown/" class="sidebar-link">Markdown</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/markdown/#markdown-语法" class="sidebar-link">Markdown 语法</a></li></ul></li><li><a href="/blog/tools/vs-code/" aria-current="page" class="active sidebar-link">VS Code</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/tools/vs-code/#vue开发配置eslint自动格式化" class="sidebar-link">vue开发配置eslint自动格式化</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vue开发配置eslint自动格式化"><a href="#vue开发配置eslint自动格式化" class="header-anchor">#</a> vue开发配置eslint自动格式化</h2> <ul><li>安装插件：ESLint, Vetur, Prettier-Code formmater</li> <li>file &gt; preferences &gt; settings &gt; 右上角open settings(JSON) 打开settings.json</li> <li>将settings.json替换为以下内容</li></ul> <div class="language-JSON extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;editor.fontSize&quot;</span><span class="token operator">:</span> <span class="token number">14</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;eslint.options&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">//指定vscode的eslint所处理的文件的后缀</span>
+    <span class="token property">&quot;extensions&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.vue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.ts&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.tsx&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;javascript&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;indent_size&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;eslint.validate&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// 确定校验准则</span>
+    <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;javascriptreact&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;typescript&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;typescriptreact&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;files.autoSave&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;files.associations&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;*.wpy&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.wxml&quot;</span><span class="token operator">:</span> <span class="token string">&quot;wxml&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.cjson&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jsonc&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.wxss&quot;</span><span class="token operator">:</span> <span class="token string">&quot;css&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.wxs&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.html&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;emmet.includeLanguages&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;wxml&quot;</span><span class="token operator">:</span> <span class="token string">&quot;html&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;minapp-vscode.disableAutoConfig&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// vscode默认启用了根据文件类型自动设置tabsize的选项</span>
+  <span class="token property">&quot;editor.detectIndentation&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token comment">// 重新设定tabsize</span>
+  <span class="token property">&quot;editor.tabSize&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token comment">//  #去掉代码结尾的分号</span>
+  <span class="token property">&quot;prettier.semi&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">//  #使用单引号替代双引号</span>
+  <span class="token property">&quot;prettier.singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">//  #让函数(名)和后面的括号之间加个空格</span>
+  <span class="token property">&quot;javascript.format.insertSpaceBeforeFunctionParenthesis&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token comment">// #让vue中的js按编辑器自带的ts格式进行格式化</span>
+  <span class="token comment">// &quot;vetur.format.defaultFormatter.js&quot;: &quot;vscode-typescript&quot;,</span>
+  <span class="token property">&quot;git.enableSmartCommit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.quickSuggestions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;strings&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//一定要在vutur.defaultFormatterOptions参数中设置，单独修改prettier扩展的设置是无法解决这个问题的，因为perttier默认忽略了vue文件（事实上从忽略列表移除vue也不能解决这个问题）</span>
+  <span class="token property">&quot;vetur.format.defaultFormatterOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;js-beautify-html&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">// force-aligned | force-expand-multiline</span>
+      <span class="token property">&quot;wrap_attributes&quot;</span><span class="token operator">:</span> <span class="token string">&quot;force-aligned&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prettyhtml&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;printWidth&quot;</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;wrapAttributes&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;sortAttributes&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">//  #去掉代码结尾的分号</span>
+      <span class="token property">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">//  #使用单引号替代双引号</span>
+      <span class="token property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 插件KoroFileHeader</span>
+  <span class="token comment">// 文件头部注释-快捷键crtl+alt+i（window）,ctrl+cmd+t (mac)</span>
+  <span class="token property">&quot;fileheader.customMade&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;Descripttion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">//&quot;version&quot;: &quot;&quot;,</span>
+    <span class="token property">&quot;Author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;voanit&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;Date&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Do not edit&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;LastEditors&quot;</span><span class="token operator">:</span> <span class="token string">&quot;voanit&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;LastEditTime&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Do not Edit&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//函数注释-快捷键ctrl+alt+t (window), ctrl+alt+t(mac)</span>
+  <span class="token property">&quot;fileheader.cursorMode&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment">// &quot;test&quot;: &quot;test font&quot;,</span>
+    <span class="token comment">// &quot;msg&quot;: &quot;&quot;,</span>
+    <span class="token property">&quot;param&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;return&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">//安装live Server插件</span>
+  <span class="token property">&quot;liveServer.settings.donotVerifyTags&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;liveServer.settings.donotShowInfoMsg&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;liveServer.settings.NoBrowser&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;liveServer.settings.CustomBrowser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;chrome&quot;</span><span class="token punctuation">,</span> <span class="token comment">//设置默认打开的浏览器</span>
+  <span class="token property">&quot;liveServer.settings.host&quot;</span><span class="token operator">:</span> <span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;liveServer.settings.port&quot;</span><span class="token operator">:</span> <span class="token number">5000</span><span class="token punctuation">,</span> <span class="token comment">//设置本地服务的端口号</span>
+  <span class="token property">&quot;liveServer.settings.root&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/dist&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;[vue]&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;editor.defaultFormatter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;octref.vetur&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;editor.codeActionsOnSave&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;source.organizeImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;source.fixAll&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;source.fixAll.eslint&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;settingsSync.ignoredSettings&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+  
+  
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token property">&quot;vetur.format.options.tabSize&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+<span class="token property">&quot;workbench.sideBar.location&quot;</span><span class="token operator">:</span> <span class="token string">&quot;right&quot;</span><span class="token punctuation">,</span>
+<span class="token property">&quot;terminal.integrated.tabs.enabled&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">7/30/2021, 1:48:59 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/tools/markdown/" class="prev">
+        Markdown
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/blog/assets/js/app.355c7b23.js" defer></script><script src="/blog/assets/js/2.9ff58ea3.js" defer></script><script src="/blog/assets/js/47.1a957e56.js" defer></script>
+  </body>
+</html>
