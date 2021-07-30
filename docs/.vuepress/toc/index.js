@@ -131,7 +131,8 @@ module.exports = {
       },
       ['git/', 'Git'],
       ['linux/', 'Linux'],
-      ['markdown/', 'Markdown']
+      ['markdown/', 'Markdown'],
+      ['vs-code/', 'VS Code']
     ],
     '/news/': [
       {
